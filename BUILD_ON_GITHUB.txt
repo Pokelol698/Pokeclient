@@ -1,0 +1,9 @@
+POKE CLIENT — GITHUB BUILD
+
+1. Create a new GitHub repository.
+2. Upload every file and folder from this project, including .github/workflows/build.yml.
+3. Commit to main (or master).
+4. Open GitHub -> Actions -> Build Poke Client.
+5. Download the platform artifact produced by the workflow.
+
+The current project intentionally does not pretend that Microsoft authentication works without a registered OAuth application. To enable real Minecraft account login, configure the official Microsoft identity flow in the next backend step; never collect or store a user's Microsoft password.

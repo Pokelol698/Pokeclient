@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0c10">
+  <title>Poke Client</title>
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">P</div>
+        <div><strong>Poke Client</strong><span>1.21.11</span></div>
+      </div>
+      <nav aria-label="Main navigation">
+        <button class="nav active" data-page="home">⌂ <span>Home</span></button>
+        <button class="nav" data-page="mods">▦ <span>Mods</span></button>
+        <button class="nav" data-page="profiles">◈ <span>Profiles</span></button>
+        <button class="nav" data-page="servers">◉ <span>Servers</span></button>
+        <button class="nav" data-page="settings">⚙ <span>Settings</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="account" id="accountCard">
+          <div class="avatar" id="avatar">?</div>
+          <div><b id="accountName">Not signed in</b><small id="accountSub">Microsoft account</small></div>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <div class="crumb" id="pageTitle">Home</div>
+        <div class="header-actions">
+          <span class="native-pill" id="platformPill">Desktop</span>
+          <button class="ghost" id="loginBtn">Sign in</button>
+          <button class="iconBtn" id="minimizeBtn" title="Minimize">—</button>
+          <button class="iconBtn danger" id="closeBtn" title="Close">×</button>
+        </div>
+      </header>
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./src/app.js"></script>
+</body>
+</html>
